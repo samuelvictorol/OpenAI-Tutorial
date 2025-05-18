@@ -1,12 +1,20 @@
 {
   "name": "yt-guitas-garage-1",
   "version": "1.0.0",
-  "description": "- [OpenAI - API KEY ](https://platform.openai.com/settings/organization/api-keys)",
-  "main": "index.js",
+  "description": "Tutorial como conectar com a API oficial da OpenAI.",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "samuelvictorol",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "openai": "^4.100.0"
+  },
+    "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }

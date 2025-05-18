@@ -1,0 +1,12 @@
+{
+  "name": "yt-guitas-garage-1",
+  "version": "1.0.0",
+  "description": "- [OpenAI - API KEY ](https://platform.openai.com/settings/organization/api-keys)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

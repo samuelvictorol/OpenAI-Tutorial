@@ -115,6 +115,8 @@ npm install
 > <strong>Você terá uma API REST simples, funcional, com linguagem natural e inteligência baseada no modelo oficial da OpenAI, pronta para ser integrada em qualquer aplicação moderna.</strong>
 
 ## 🪐 Inspirações:
+- [ChatCar IA](https://chatcar.me)
+
 [![image](https://github.com/user-attachments/assets/1b878763-3a96-4d09-8c3b-902d706c05c3)
 ](https://chatcar.me)
 
@@ -122,8 +124,5 @@ npm install
 
 [![image](https://github.com/user-attachments/assets/fb385fa2-1adf-4b8b-9a57-135ae87fae6b)
 ](https://chatcar.me)
-
-[https://s3.amazonaws.com//beta-img.b2bstack.net/uploads/production/product/product_image/442/ManyChat.png](https://manychat.com/)
-
 
 # 📍 Por [samuelvictorol](https://samuelvictorol.github.io/portfolio)

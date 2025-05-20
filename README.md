@@ -1,6 +1,6 @@
 # 🤖 SecretariaIA – ChatGPT com API Oficial OpenAI
 
-Tutorial completo e direto ao ponto de como integrar o ChatGPT (GPT-3.5 / GPT-4) usando a **API oficial da OpenAI**, criando uma assistente virtual estilo **secretária inteligente** com Node.js e Express.
+Tutorial completo e direto ao ponto de como integrar o ChatGPT (GPT-3.5 / GPT-4) usando a **API oficial da OpenAI**, criando uma assistente virtual estilo **secretária inteligente** com Node.js e Express. A partir desse tutorial você poderá criar suas próprias automações e integrar nas suas aplicações, além de poder monetizar criando SaaS, Serviços On-line, Automações e Chatbots.
 
 ---
 

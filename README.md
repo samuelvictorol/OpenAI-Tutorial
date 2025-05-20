@@ -75,7 +75,7 @@ npm install
 ```bash
 {
   "openaiResponse": {
-    "secretariaIA": "Texto da resposta gerada pela IA."
+    "secretariaIA": "O horário de funcionamento da Pizzaria Bella Massa é todos os dias das 18h às 23h."
   }
 }
 ```
@@ -86,6 +86,7 @@ npm install
 
 ## 🔗 Links úteis
 - [🔑 Obter sua API Key da OpenAI](https://platform.openai.com/api-keys)
+- [✨ Enviar Requisições HTTP](https://hoppscotch.io/)
 - [📘 Documentação oficial OpenAI](https://platform.openai.com/docs/api-reference/introduction)
 - [🎲 Tokenizer OpenAI](https://platform.openai.com/tokenizer)
 - [💻 Código-fonte no GitHub](https://github.com/samuelvictorol/OpenAI-Tutorial)

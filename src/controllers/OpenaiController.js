@@ -1,6 +1,9 @@
 require("dotenv").config();
 
 const { OpenAI } = require("openai");
+const InfoEmpresa = require("../openai-files/InfoEmpresa");
+const SystemPrompt = require("../openai-files/SystemPrompt");
+const UserPrompt = require("../openai-files/UserPrompt");
 
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
@@ -9,42 +12,15 @@ const openai = new OpenAI({
 const OpenaiController = {
     secretariaIA: async (req, res) => {
         try {
-        const { message } = req.body;
-
+        const { mensagemCliente } = req.body;
         // Dados enviados à IA
         const metadata = {
-            mensagemCliente: message,
-            infoEmpresa: {
-                nome: "Nome da empresa",
-                cnpj: "CNPJ da empresa",
-                telefone: "Telefone da empresa",
-                email: "Email da empresa",
-                descricao: "Descrição da empresa",
-                endereco: "Endereço da empresa",
-                horarioFuncionamento: "Horário de funcionamento da empresa",
-                site: "Site da empresa",
-            },
+            mensagemCliente,
+            infoEmpresa: InfoEmpresa
         };
-
-        const systemPrompt = `
-            Você é uma secretária de uma empresa. Sua função é entender o contexto da empresa e conversar com o cliente respondendo suas perguntas com linguagem natural à respeito de produtos e serviços que está sendo enviado .
-            Responda ESTRITAMENTE com um objeto JSON no seguinte formato:
-            {
-                "openaiResponse": {
-                    "secretariaIA": "Resposta tirando a dúvida sobre o sistema...",
-                }
-            }
-            ### Regras:
-            - O dado mensagemCliente é a mensagem do cliente.
-            - O dado infoEmpresa é um objeto com informações básicas da empresa.
-            - Você deve responder com um JSON válido.
-            - Se o cliente fugir do contexto retorne uma mensagem padrão de erro com mensagem natural seguindo o formato. Seja direto, objetivo e não saia do padrão JSON.`;
-
-        const userPrompt = `
-            Abaixo estão os dados com informações básicas da empresa:
-            ${JSON.stringify(metadata, null, 2)}
-            Gere o objeto JSON conforme instruções.`;
-
+        // Criação dos prompts para a IA
+        const systemPrompt = SystemPrompt
+        const userPrompt = UserPrompt.getPrompt(metadata);
         // Configuração da IA e envio da requisição
         const completion = await openai.chat.completions.create({
             model: "gpt-3.5-turbo",

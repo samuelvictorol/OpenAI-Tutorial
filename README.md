@@ -111,8 +111,6 @@ npm install
 [![image](https://github.com/user-attachments/assets/1b878763-3a96-4d09-8c3b-902d706c05c3)
 ](https://chatcar.me)
 
-[![image](https://github.com/user-attachments/assets/faf4602a-95b0-4ebb-b122-5097e8c51601)](https://chatcar.me)
-
 [![image](https://github.com/user-attachments/assets/fb385fa2-1adf-4b8b-9a57-135ae87fae6b)
 ](https://chatcar.me)
 

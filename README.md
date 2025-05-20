@@ -68,17 +68,7 @@ npm install
 ## 🔐 Formato da IA (Interno)
 ```bash
 {
-  "mensagemCliente": "mensagem do usuário",
-  "infoEmpresa": {
-    "nome": "Nome da empresa",
-    "cnpj": "CNPJ da empresa",
-    "telefone": "Telefone",
-    "email": "Email",
-    "descricao": "Breve descrição",
-    "endereco": "Localização",
-    "horarioFuncionamento": "Ex: Seg a Sex - 8h às 18h",
-    "site": "https://..."
-  }
+  "mensagemCliente": "Qual o horário de funcionamento ?",
 }
 ```
 > A IA sempre responde com um objeto JSON válido no formato:
